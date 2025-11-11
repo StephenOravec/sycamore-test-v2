@@ -1,5 +1,8 @@
 use sycamore::prelude::*;
 
 fn main() {
-    sycamore::render(|| "Hello, world!".into());
+sycamore::render(|| view! {
+    h1 { "Hello, world!" }
+    p { "This is my first Sycamore app" }
+});
 }
